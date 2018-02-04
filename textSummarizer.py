@@ -31,7 +31,7 @@ def summarize(description):
 pages = pd.read_excel(source)
 
 # summarize
-pages[targetColumn] = pages[sourceCol].apply(lambda x: summarize(x))
+pages[targetColumn] = pages[sourceColumn].apply(lambda x: summarize(x))
 
 # write
 pages.to_excel(target)
